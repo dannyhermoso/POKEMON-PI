@@ -1,0 +1,110 @@
+@import url('http://fonts.cdnfonts.com/css/arcade-classic');
+
+
+.searchBar{
+    width: 500px;
+    float: left;
+}
+
+.input{
+    float: left;
+    
+    width: 65%;
+    height: 30px;
+    margin-top: 28px;
+    font-size: 22px;
+    border: 4px solid gold;
+    border-radius: 15px;
+    padding-left: 12px;
+    background-color: rgb(242, 238, 238);
+    transition: all 400ms;
+    color: rgb(144, 140, 140);
+    font-family: 'ArcadeClassic', sans-serif;
+}
+
+.input:focus{
+    border: 8px solid rgb(21, 83, 217);
+    margin-top: 22px;
+    color: black;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+
+.button{
+    
+    display: block;
+    position: absolute;
+    margin-top: 28px;
+    margin-left: 370px;
+    height: 40px;
+    width: 87px;
+    font-family: 'ArcadeClassic', sans-serif;
+    font-size: 21px;
+    border: 3px solid red;
+    
+  background: white;
+  
+  margin-right: 2.6rem;
+  box-shadow: 0px 0px 4px gold;
+  transition: all 0.2s;
+}
+
+.button:hover{
+    display: block;
+    position: absolute;
+    box-shadow: -0px 1px 5px blue, -2px 1px 6px magenta, -3px 4px 9px aqua;
+    transform: translate(0.7rem, -0.8rem);
+    font-size: 24px;
+    height: 55px;
+    width: 100px;
+    animation: creacion 3s infinite;
+    cursor: pointer;
+}
+
+@keyframes creacion {
+    0%{
+        color: aqua;
+        border: 8px solid chartreuse;
+    }
+    10%{
+        color: #c52754;
+        border: 8px solid  yellow;
+    }
+    20%{
+        color: chartreuse;
+        border: 8px solid greenyellow;
+    }
+    30%{
+        color: yellow;
+        border: 8px solid orange;
+    }
+    40%{
+        color: greenyellow;
+        border: 8px solid lightseagreen;
+    }
+    50%{
+        color: orange;
+        border: 8px solid purple;
+    }
+    60%{
+        color: lightseagreen;
+        border: 8px solid cornflowerblue;
+    }
+    70%{
+        color: purple;
+        border: 8px solid magenta;
+    }
+    80%{
+        color: cornflowerblue;
+        border: 8px solid turquoise;
+    }
+    90%{
+        color: magenta;
+        border: 8px solid aqua;
+    }
+    100%{
+        color: turquoise;
+        border: 8px solid #c52754;
+    }
+}

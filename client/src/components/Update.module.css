@@ -1,0 +1,169 @@
+.general{
+    background-color: #111111;
+    width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+    font-family: 'ArcadeClassic', sans-serif;
+    color: white;
+    margin: 0px auto;
+}
+
+.back{
+    text-decoration: none;
+    color: white;
+    font-family: 'ArcadeClassic', sans-serif;
+    width: 200px;
+    background-color: purple;
+    border: 3px solid turquoise;
+    color: black;
+    float: left;
+    transition: all 400ms;
+    font-size: 39px;
+    text-shadow: 1px 1px 1px black, 1px 2px 1px turquoise, 1px 3px 1px yellow, 1px 4px 1px red;
+}
+
+.back:hover{
+    background-color: blanchedalmond;
+    cursor: pointer;
+    color: turquoise;
+    text-shadow: 1px 1px 1px black, 1px 2px 1px turquoise, 1px 3px 1px yellow, 1px 4px 1px red, 1px 5px 1px black;
+}
+
+.imagen{
+    
+    max-width: 500px;
+    max-height: 500px;
+    border: 4px solid black;
+    border-radius: 50%;
+    animation: imagen 0.9s infinite linear;
+}
+
+@keyframes imagen {
+    0%{
+        box-shadow: 30px 30px 100px red;
+    }
+    25%{
+        box-shadow: 30px -30px 100px turquoise;
+    }
+    50%{
+        box-shadow: -30px -30px 100px chartreuse;
+    }
+    75%{
+        box-shadow: -30px 30px 100px gold;
+    }
+    100%{
+        box-shadow: 30px 30px 100px red;
+    }
+}
+
+.clearfix{
+    clear: both;
+}
+
+.h1{
+    float: left;
+    margin: 0px auto;
+    margin-left: 18%;
+    font-size: 65px;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 1px turquoise, 1px 2px 1px red, 1px 3px 1px royalblue, 1px 4px 1px #420fe6, 1px 5px 1px gold, 1px 6px 1px tomato, 1px 7px 1px teal, 1px 8px 1px azure, 1px 9px 1px aquamarine, 1px 10px 1px black, 18px 18px 35px blue, 19px 19px 30px purple, 20px 20px 22px gold;
+    margin-bottom: 20px;
+}
+
+.formulario{
+    font-size: 28px;
+    text-shadow: 1px 1px 1px gold, 1px 2px 1px turquoise, 1px 3px 1px rebeccapurple, 1px 4px 1px red, 1px 5px 1px black;
+    line-height: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+    margin-top: 10px;
+}
+
+.progress{
+  
+    height: 22px;
+    width: 250px;
+    margin-left: 10px;
+    
+  }
+  
+.progress::-webkit-progress-bar {
+    background-color: rgba(162, 162, 162, 0.784);
+    box-shadow: 0px 0px 15px 0px #e1e1e1
+  }
+.progress::-webkit-progress-value {
+    background:#04ff04;
+   
+    box-shadow: 0px 0px 15px 0px #e1e1e1;
+  
+  }
+  
+.progress::-moz-progress-bar {
+    box-shadow: 0 10px 40px -10px #fff;
+    background:#04ff04; 
+  }
+
+
+.input{
+    font-family: 'ArcadeClassic', sans-serif;
+    font-size: 18px;
+    color: #ccc;
+    border: #fff 3px solid;
+    transition: all 300ms;
+}
+  
+.input:focus{
+    color: black;
+    border: 5px turquoise solid;
+    box-shadow: 1px 1px black, 1px 2px 1px #04ff04, 1px 3px 1px rebeccapurple, 1px 4px royalblue;
+    font-size: 25px;
+    background-color: #ccc;
+}
+
+.selectType{
+    margin-top: 4px;
+    font-family: 'ArcadeClassic', sans-serif;
+    font-size: 24px;
+    border: 1px solid black;
+    margin-right: 25px;
+  }
+
+  .deleteType{
+    position: relative;
+    margin-left: 5px;
+    transform: translateY(-6px);
+    border-radius: 4px;
+    background-color: red;
+    font-family: 'ArcadeClassic', sans-serif;
+    cursor: pointer;
+  }
+  
+  .deleteType:hover{
+    background-color: #121212;
+    color: white;
+  }
+  
+  .textType{
+    font-family: 'ArcadeClassic', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  
+  .imageType{
+    width: 25px;
+  }
+
+  .buttonCreate{
+    width: 250px;
+    font-family: 'ArcadeClassic', sans-serif;
+    font-size: 30px;
+    cursor: pointer;
+    border: 4px solid aqua;
+    box-shadow: 3px 4px 6px aquamarine, -4px -3px 6px blue;
+  }
+  
+  .buttonCreate:hover{
+    background-color: black;
+    color: gold;
+  }
+  

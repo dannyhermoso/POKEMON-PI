@@ -1,0 +1,162 @@
+.bg {
+    width: 100%;
+    height: 100vh;
+    
+    
+    background-size: 300% 300%;
+    
+    background-image: linear-gradient(
+          -45deg, 
+          #F5F5F5 0%, 
+          #F05454 25%, 
+          #30475E 51%, 
+          #121212 100%
+    );  
+    animation: AnimateBG 20s ease infinite;
+  }
+  
+   @keyframes AnimateBG { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+
+.header{
+    display: block;
+    
+    color: white;
+    margin: 0px auto;
+    color: whiteS;
+    width: 100%;
+    height: 90px;
+}
+
+.header h1{
+    font-family: 'ArcadeClassic', sans-serif;
+    font-size: 62px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 1px aqua, 1px 2px 1px rgb(198, 246, 127), 1px 3px 1px rgb(47, 255, 248), 1px 4px 1px rgb(243, 11, 11), 1px 5px 1px rgb(67, 0, 253), 1px 6px 1px rgb(243, 235, 10), 11px 11px 22px black;
+    letter-spacing: 3px;
+    animation: titulo 3s infinite;
+}
+
+@keyframes titulo {
+  0%{
+    color: white;
+  }
+  50%{
+    color: gold;
+  }
+  100%{
+    color: white;
+  }
+}
+
+.back{
+    display: block;
+    font-family: 'ArcadeClassic', sans-serif;
+    margin-left: 15px;
+    width: 100px;
+    height: 67px;
+    margin-bottom: 5px;
+    padding-top: 15px;
+    color: white;
+    background-color: black;
+    font-size: 25px;
+    text-decoration: none;
+}
+.back:hover{
+  color:gold;
+  background-color: white;
+  text-shadow: 1px 1px 1px aqua, 1px 2px 1px rgb(198, 246, 127), 1px 3px 1px rgb(47, 255, 248), 1px 4px 1px rgb(243, 11, 11), 1px 5px 1px rgb(67, 0, 253), 1px 6px 1px rgb(243, 235, 10), 11px 11px 22px black;
+  border-radius: 10px;
+}
+
+.formulario form label{
+  font-family: 'ArcadeClassic', sans-serif;
+  font-size: 25px;
+}
+
+.formulario form input{
+  font-size: 25px;
+  font-family: 'ArcadeClassic', sans-serif;
+  padding-left: 10px;
+  min-width: 150px;
+  color: red;
+}
+
+.formulario form progress{
+  
+  height: 22px;
+  width: 250px;
+  margin-left: 10px;
+  
+}
+
+.formulario form progress::-webkit-progress-bar {
+  background-color: rgba(162, 162, 162, 0.784);
+  box-shadow: 0px 0px 15px 0px #e1e1e1
+}
+
+.formulario form progress::-webkit-progress-value {
+  background:#04ff04;
+ 
+  box-shadow: 0px 0px 15px 0px #e1e1e1;
+
+}
+
+.formulario form progress::-moz-progress-bar {
+  box-shadow: 0 10px 40px -10px #fff;
+  background:#04ff04; 
+}
+
+.textType{
+  font-family: 'ArcadeClassic', sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.imageType{
+  width: 25px;
+}
+
+.selectType{
+  margin-top: 4px;
+  font-family: 'ArcadeClassic', sans-serif;
+  font-size: 24px;
+  border: 1px solid black;
+  margin-right: 25px;
+}
+
+.deleteType{
+  position: relative;
+  margin-left: 5px;
+  transform: translateY(-6px);
+  border-radius: 4px;
+  background-color: red;
+  font-family: 'ArcadeClassic', sans-serif;
+  cursor: pointer;
+}
+
+.deleteType:hover{
+  background-color: #121212;
+  color: white;
+}
+
+.buttonCreate{
+  font-family: 'ArcadeClassic', sans-serif;
+  font-size: 30px;
+  cursor: pointer;
+  border: 4px solid aqua;
+  box-shadow: 3px 4px 6px aquamarine, -4px -3px 6px blue;
+}
+
+.buttonCreate:hover{
+  background-color: black;
+  color: gold;
+}
+
+.validations{
+  font-family: 'ArcadeClassic', sans-serif;
+  color: white;
+}

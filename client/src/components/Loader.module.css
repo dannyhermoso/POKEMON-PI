@@ -1,0 +1,177 @@
+.background {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width: 62.5em) {
+    .jump_container {
+        animation: jumpy 2s 1s infinite alternate;
+   }
+}
+.pokeball {
+    border-radius: 50%;
+    border: 2px solid white;
+    height: 3.125em;
+    margin: 0 auto 1rem;
+    position: relative;
+    
+    width: 3.125em;
+}
+@media screen and (min-width: 43.75em) {
+    .pokeball {
+        animation: back-and-forth 4s 3s infinite;
+        border: 4px solid white;
+        width: 4.375em;
+        height: 4.375em;
+   }
+}
+.pokeball__inner_circle {
+    animation: spinning ease-in-out 5s infinite;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid white;
+    height: 0.9375em;
+    left: 0.9375em;
+    position: absolute;
+    top: 0.9375em;
+    width: 0.9375em;
+}
+@media screen and (min-width: 43.75em) {
+    .pokeball__inner_circle {
+        animation: twitchyX 4s 1s infinite;
+        width: 1.375em;
+        height: 1.375em;
+        left: 1.3125em;
+        top: 1.3125em;
+   }
+}
+.pokeball__line {
+    border-top: 2px solid white;
+    position: relative;
+    top: 1.375em;
+    width: 100%;
+}
+@media screen and (min-width: 43.75em) {
+    .pokeball__line {
+        top: 2em;
+        animation: wobbling 2s 3s infinite alternate;
+   }
+}
+@media screen and (min-width: 700px) {
+    .ground {
+        border-top: 2px dotted white;
+        width: 100%;
+        display: block;
+        margin: -17px auto 0;
+   }
+}
+@keyframes spinning {
+    0% {
+        transform: translateX(-70%);
+   }
+    25% {
+        transform: translateX(75%);
+   }
+    50% {
+        transform: translateX(-70%);
+   }
+    75% {
+        transform: translateX(75%);
+   }
+    100% {
+        transform: translateX(-70%);
+   }
+}
+@keyframes wobbling {
+    0% {
+        transform: rotate(0deg);
+   }
+    5% {
+        transform: rotate(-10deg);
+   }
+    10% {
+        transform: rotate(0deg);
+   }
+    90% {
+        transform: rotate(5deg);
+   }
+    100% {
+        transform: rotate(0deg);
+   }
+}
+@keyframes back-and-forth {
+    0% {
+        transform: translateX(0%);
+   }
+    4% {
+        transform: translateX(-12%);
+   }
+    10% {
+        transform: translateX(-10%);
+   }
+    95% {
+        transform: translateX(0%);
+   }
+    99% {
+        transform: translateX(3%);
+   }
+    100% {
+        transform: translateX(0%);
+   }
+}
+@keyframes twitchyX {
+    0% {
+        transform: translateX(0%);
+   }
+    8% {
+        transform: translateX(-55%);
+   }
+    75% {
+        transform: translateX(-50%);
+   }
+    90% {
+        transform: translateX(-30%);
+   }
+    100% {
+        transform: translateX(0%);
+   }
+}
+@keyframes jumpy {
+    0% {
+        transform: translateY(0%);
+   }
+    1% {
+        transform: translateY(0.5%);
+   }
+    5% {
+        transform: translateY(-10%);
+   }
+    6% {
+        transform: translateY(-11%);
+   }
+    7% {
+        transform: translateY(-10%);
+   }
+    10% {
+        transform: translateY(0%);
+   }
+    100% {
+        transform: translateY(0%);
+   }
+}
+
+.title{
+    position: absolute;
+    background-color: black;
+    margin: 0px auto;
+    margin-left: 140px;
+    font-family: 'ArcadeClassic', sans-serif;
+    width: 80%;
+    font-size: 70px;
+    letter-spacing: 4px;
+    text-shadow: 1px 1px 1px black, 1px 2px 1px rgb(198, 246, 127), 1px 3px 1px rgb(47, 255, 248), 1px 4px 1px rgb(243, 11, 11), 1px 5px 1px rgb(67, 0, 253), 1px 6px 1px rgb(243, 235, 10), 1px 7px 1px red, 1px 8px 1px orange, 1px 9px 1px purple, 1px 10px 1px purple, 1px 11px 1px white, 1px 1px 12px gold;
+}
